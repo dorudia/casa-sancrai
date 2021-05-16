@@ -327,8 +327,9 @@ h3 b {
 .panorama {
     width: 100%;
     height: 40vh;
-    background-image: url(./image/casa-sancrai-panorama.jpeg);
-    background-position-x: center;
+    background-image: url(./image/panorama-despre.png);
+    background-size: cover;
+    background-position-x:center;
     background-position-y: center;
 }
 
