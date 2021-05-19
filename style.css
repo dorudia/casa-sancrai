@@ -110,8 +110,8 @@
 }
 
 .social-media img {
-   width: 40px;
-   height: 40px;
+   width: 30px;
+   height: 30px;
    margin: 10px;
    padding: 3px;
     background-color: rgb(243, 243, 243);
@@ -138,6 +138,9 @@
     overflow: hidden;
     z-index: 2;
     border-bottom: 1px solid white;
+    background-image: url(./image/img-prin-desktop-2.png);
+    background-size: cover;
+    background-position-x: left;
 }
 .img-fundal {
     width: 100%;
@@ -146,20 +149,22 @@
 .img-fundal  img {
    
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: fundalAnimation 8s forwards;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+    animation: fundalAnimation 10s forwards;
 }
 
 @keyframes fundalAnimation {
     0% {
-        transform:translate(-50%, -20%) scale(1.6);
-       
+        transform: scale(1.6);
+     
     }
     100% {
-       transform: translate(-50%, -50%) scale(1);
-       
+       transform: scale(1);
+     
     }
 }
 .section-1 .img-mobile {
@@ -201,7 +206,7 @@ h3 b {
 .transparent {
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     z-index: -1;
 }
 
@@ -274,11 +279,18 @@ h3 b {
     top: 40px;
     left:30px;
 }
+
+/* -----------------------------Section-3---------------------------- */
+
 .section-3 {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url(./image/fundal-h1.jpeg);
+    background-size: cover;
+    background-position-x: center;
+
 }
 .section-3 img {
     position: absolute;
@@ -304,7 +316,7 @@ h3 b {
 }
 .section-3 h5 {
     position: absolute;
-    bottom: 35px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -312,6 +324,18 @@ h3 b {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 100;
     letter-spacing: .5px;
+}
+.section-3 p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
 }
 
 /* -------------------------------------Despre--------------------------------------------------------- */
@@ -402,8 +426,8 @@ h3 b {
     width: 100%;
     height: 100vh;
     background-image: url(./image/img-contact-3.jpeg);
-    /* background-size: cover; */
-    background-position-x: center;
+    background-size: cover;
+    background-position-x: left;
     background-position-y:center;
     position: relative;
 }
@@ -463,6 +487,16 @@ h3 b {
         left: 0;
         transform: translate(0);
     }
+}
+
+@media only screen and (max-width: 1100px) {
+    .section-1 {
+        height: 100vh;
+    }
+    .fundal-2 {
+        height: 100vh;
+    }
+   
 }
 
 @media only screen and (max-width: 750px) {
